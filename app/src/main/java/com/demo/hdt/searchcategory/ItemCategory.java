@@ -1,11 +1,22 @@
 package com.demo.hdt.searchcategory;
 
-public class CategoryItem {
+public class ItemCategory {
     private String categoryId;
     private String categoryName;
-    private int categoryGroup;
+    private Integer categoryGroup;
     private String rankParentId;
     private String rankParentName;
+
+    public ItemCategory() {
+    }
+
+    public ItemCategory(String categoryId, String categoryName, Integer categoryGroup, String rankParentId, String rankParentName) {
+        this.categoryId = categoryId;
+        this.categoryName = categoryName;
+        this.categoryGroup = categoryGroup;
+        this.rankParentId = rankParentId;
+        this.rankParentName = rankParentName;
+    }
 
     public String getCategoryId() {
         return categoryId;
@@ -23,11 +34,11 @@ public class CategoryItem {
         this.categoryName = categoryName;
     }
 
-    public int getCategoryGroup() {
+    public Integer getCategoryGroup() {
         return categoryGroup;
     }
 
-    public void setCategoryGroup(int categoryGroup) {
+    public void setCategoryGroup(Integer categoryGroup) {
         this.categoryGroup = categoryGroup;
     }
 
